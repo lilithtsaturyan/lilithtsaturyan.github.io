@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lilit Tsaturyan | CV</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="scripts/contact.js"></script>
+    <style>
+      body,
+      html {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        /*background: radial-gradient(ellipse at center, rgba(8, 25, 42, 1) 19%, rgba(1, 4, 6, 1) 100%);*/
+      }
+
+      #root {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      #root>div {
+        position: absolute;
+        /*background: radial-gradient(ellipse at center, rgba(177, 198, 219, 1) 2%, rgba(5, 63, 118, 1) 100%);*/
+        border-radius: 100%;
+        /* filter:blur(1px); */
+        animation: shine infinite alternate;
+      }
+
+      @keyframes shine {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        20% {
+          transform: scale(.9);
+          opacity: .8;
+        }
+        40% {
+          transform: scale(1);
+          opacity: .9;
+        }
+        40% {
+          transform: scale(.2);
+          opacity: .2;
+        }
+        60% {
+          transform: scale(.2);
+          opacity: .1;
+        }
+        80% {
+          transform: scale(.5);
+          opacity: .5;
+        }
+        100% {
+          transform: scale(.9);
+          opacity: .9;
+        }
+      }
+    </style>
+  </head>
+  <body id="top">
+  <div id="root"></div>
+
+    <div id="loader">
+      <canvas id="draw"></canvas>
+      <img src="images/logo.svg" />
+    </div>
+    <div id="page" class="load-wrapper none">
+      <header>
+        <div class="profile-page sidebar-collapse">
+          <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+            <div class="container">
+              <div class="navbar-translate">
+                <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+              </div>
+              <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
+                  <!--                <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>-->
+                  <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
+                  <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="page-content">
+        <div>
+          <div class="profile-page">
+            <div class="wrapper">
+              <div class="page-header page-header-small" filter-color="green" id="header-image">
+                <canvas id="page-header-image-effects"></canvas>
+                <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg');"></div>
+                <div class="container">
+                  <div class="content-center">
+                    <div class="cc-profile-image"><a href="#"><img src="images/avatar.jpg" alt="Image"/></a></div>
+                    <div class="h2 title">Lilit Tsaturyan</div>
+                    <p class="category text-white">Project Manager</p>
+                    <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a>
+                    <a class="btn btn-primary" href="/cv.pdf" download data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+                  </div>
+                </div>
+                <div class="section social-line">
+                  <div class="container">
+                    <div class="button-container">
+                      <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="skype:lilithtsaturyan?call" rel="tooltip" title="My Skype: lilithtsaturyan">
+                        <i class="fa fa-skype"></i>
+                      </a>
+                      <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://www.upwork.com/freelancers/~0109da172d9e70ada2" rel="tooltip" title="My upwork profile">
+                        <span class="custom-icon upwork-icon"></span>
+                      </a>
+                      <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://linkedin.com/in/lilith-tsaturyan-8b851214b" rel="tooltip" title="My LinkedIn profile">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                      <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://github.com/lilithtsaturyan" rel="tooltip" title="My Github profile">
+                        <i class="fa fa fa-github"></i>
+                      </a>
+                      <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://www.freelancer.com/u/lilithtsaturyan" rel="tooltip" title="My Freelancer profile">
+                        <span class="custom-icon freelancer-icon"></span>
+                      </a>
+                      <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://pph.me/lilithtsaturyan" rel="tooltip" title="My Peopleperhour profile">
+                        <span class="custom-icon peopleperhour-icon"></span>
+                      </a>
+                      <a class="btn btn-default btn-round btn-lg btn-icon" target="_blank" href="https://talent.hubstaff.com/profiles/lilithtsaturyan" rel="tooltip" title="My Hubstaff Talent profile">
+                        <span class="custom-icon hubstaff-icon"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section" id="about">
+            <div class="container">
+              <div class="card" data-aos="fade-up" data-aos-offset="10">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="card-body">
+                      <div class="h4 mt-0 title">About</div>
+                      <p>
+                        <br>
+                        Result-driven project manager with over 3 years of experiance ( 1 year in IT sector). Oering exceptional management, leadership, organizational and communication
+                        <br>
+                        skills; teamworker, easily adaptive to change in work environment, ready to learn new skills.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="card-body">
+                      <div class="h4 mt-0 title">Basic Information</div>
+                      <div class="row">
+                        <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
+                        <div class="col-sm-8">25</div>
+                      </div>
+                      <div class="row mt-3">
+                        <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+                        <div class="col-sm-8">lilithtsaturyan96@gmail.com</div>
+                      </div>
+                      <div class="row mt-3">
+                        <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
+                        <div class="col-sm-8">+37498-969-957</div>
+                      </div>
+                      <div class="row mt-3">
+                        <div class="col-sm-4"><strong class="text-uppercase">Location:</strong></div>
+                        <div class="col-sm-8">Armenian, Yerevan</div>
+                      </div>
+                      <div class="row mt-3">
+                        <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
+                        <div class="col-sm-8">English, Russian, Armenian</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section" id="languages">
+            <div class="container">
+              <div class="h4 text-center mb-4 title">Languages</div>
+              <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="progress-container progress-primary">
+                        <span class="progress-badge">ENGLISH - BASIC</span>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="progress-container progress-primary">
+                        <span class="progress-badge">RUSSIAN - ADVANCED</span>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="progress-container progress-primary no-margin">
+                        <span class="progress-badge">ARMENIAN - NATIVE</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section" id="skill">
+            <div class="container">
+              <div class="h4 text-center mb-4 title">Professional Skills</div>
+
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body cc-experience-header">
+                      <div class="skill-name">Communication and negotiation skills</div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body cc-experience-header">
+                      <div class="skill-name">Leadership Team player</div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body cc-experience-header">
+                      <div class="skill-name">Time management and organizational skills</div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body cc-experience-header">
+                      <div class="skill-name">Strategic Planning and analysis</div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body cc-experience-header">
+                      <div class="skill-name">PM</div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body cc-experience-header">
+                      <div class="skill-name">Scrum Kanban UX/UI Design Documentation</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section" id="experience">
+            <div class="container cc-experience">
+              <div class="h4 text-center mb-4 title">Work Experience</div>
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body cc-experience-header">
+                      <p></p>
+                      <div class="h5">January 2020 - Present</div>
+                    </div>
+                  </div>
+                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body">
+                      <div class="h5">Working as a freelancer</div>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body cc-experience-header">
+                      <p>January 2020 - June 2020</p>
+                      <div class="h5">ArmBoldMind LLC.</div>
+                    </div>
+                  </div>
+                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body">
+                      <div class="h5">Project Manager</div>
+<!--                      <pre>-->
+<!--                        • Activity and resource planning,-->
+<!--                        • Organizing and motivating project team,-->
+<!--                        • Controlling time management,-->
+<!--                        • Ensuring customer satisfaction,-->
+<!--                        • Analyzing and managing project risk,-->
+<!--                        • Monitoring progress,-->
+<!--                        • Managing reports and necessary documentation-->
+<!--                      </pre>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body cc-experience-header">
+                      <p>September 2018 - January 2020</p>
+                      <div class="h5">Lresearch Consulting Company</div>
+                    </div>
+                  </div>
+                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body">
+                      <div class="h5">Project Manager</div>
+<!--                      <pre>-->
+<!--                        • Recruit, instruct, and coordinate research subjects and/or volunteers, as-->
+<!--                          appropriate to specic study objectives and work scope,-->
+<!--                        • Coordinate the day-to-day activities of any technical support sta specically-->
+<!--                          engaged in the carrying out of research protocol,-->
+<!--                        • Monitor the progress of research activities; develops and maintains records of-->
+<!--                          research activities, and prepares periodic and ad hoc reports,-->
+<!--                        • Plan and coordinate regular advisory board and steering committee meetings,-->
+<!--                        • To implement quality control process-->
+<!--                      </pre>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section" id="education">
+            <div class="container cc-education">
+              <div class="h4 text-center mb-4 title">Education</div>
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body cc-education-header">
+                      <p>November 2020 - January 2021</p>
+                      <div class="h5">UX/UI Design</div>
+                    </div>
+                  </div>
+                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body">
+                      <div class="h5">ABM IT School</div>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body cc-education-header">
+                      <p>September 2017 - June 2019</p>
+                      <div class="h5">Yerevan State University</div>
+                    </div>
+                  </div>
+                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body">
+                      <div class="h5">Sociological research methodology</div>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="row">
+                  <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body cc-education-header">
+                      <p>September 2013 - June 2017</p>
+                      <div class="h5">Yerevan State University</div>
+                    </div>
+                  </div>
+                  <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                    <div class="card-body">
+                      <div class="h5">Sociology</div>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section" id="contact">
+            <div class="cc-contact-information" style="background-image: url('images/staticmap.png');">
+              <div class="container">
+                <div class="cc-contact">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="card mb-0" data-aos="zoom-in">
+                        <div class="h4 text-center title">Contact Me</div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="card-body">
+
+                              <form action="https://formspree.io/mknqpvaz" id="hire-me" method="POST">
+                                <input type="hidden" name="_subject" value="Hire me from CV" />
+                                <div class="p pb-3"><strong>Feel free to contact me </strong></div>
+                                <div class="row mb-3">
+                                  <div class="col">
+                                    <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
+                                      <input class="form-control" type="text" name="name" placeholder="Name" required="required"/>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-3">
+                                  <div class="col">
+                                    <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
+                                      <input class="form-control" type="text" name="Subject" placeholder="Subject" required="required"/>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-3">
+                                  <div class="col">
+                                    <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                      <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-3">
+                                  <div class="col">
+                                    <div class="form-group">
+                                      <textarea class="form-control" name="message" placeholder="Your Message" required="required"></textarea>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col">
+                                    <button class="btn btn-primary" id="submit-form">Send</button>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                              <p class="mb-0"><strong>Location</strong></p>
+                              <p class="pb-2">Armenian, Yerevan</p>
+                              <p class="mb-0"><strong>Phone</strong></p>
+                              <p class="pb-2">+37498-969-957</p>
+                              <p class="mb-0"><strong>Email</strong></p>
+                              <p>lilithtsaturyan96@gmail.com</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="notification"></div>
+    </div>
+    <script src="js/core/jquery.3.2.1.min.js"></script>
+    <script src="js/core/popper.min.js"></script>
+    <script src="js/core/bootstrap.min.js"></script>
+    <script src="js/now-ui-kit.js?v=1.1.0"></script>
+    <script src="js/aos.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="js/plugins/TweenLite.min.js"></script>
+    <script src="js/plugins/EasePack.min.js"></script>
+    <script src="scripts/header-image-canvas.js"></script>
+    <script src="scripts/welcome-canvas.js"></script>
+    <script src="scripts/contact.js"></script>
+    <script>
+      const params = {
+        amount: 300,
+        size: {
+          min: 1,
+          max: 5,
+          giant: 10
+        },
+        duration: {
+          min: 5,
+          max: 35,
+        }
+      }
+      const randomBetween = (a, b) => {
+        return (a + (Math.random() * (b - a)));
+      }
+
+      for (let i = 0; i < params.amount; i++) {
+        let star = $("<div></div>");
+        let size = Math.round(Math.random() * 20) === 0 ? params.size.giant : randomBetween(params.size.min, params.size.max);
+        star.css({
+          "width": size + "px",
+          "height": size + "px",
+          "left": randomBetween(0, 100) + "%",
+          "top": randomBetween(0, 100) + "%",
+          "background-color": "#fff",
+          "box-shadow": "0 0 " + size + "px " + size / 2 + "px #fff",
+          "animation-duration": randomBetween(params.duration.min, params.duration.max) + "m"
+        });
+
+        $("#root").append(star);
+      }
+    </script>
+  </body>
+</html>
